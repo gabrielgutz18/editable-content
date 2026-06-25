@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Homepage</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Home Studio</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#welcome">Welcome</a>
+      <a href="#sections">Sections</a>
+      <a href="admin/admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main id="homepage" aria-live="polite">
+    <section class="hero loading-panel">
+      <p>Loading homepage...</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Editable with Supabase</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -11,7 +11,7 @@ const defaultContent = {
     title: "Welcome to a simpler way to keep your site current.",
     text: "This section is designed for quick edits: update the headline, body text, image, and call to action from the admin dashboard. The public page automatically reads the latest saved content from Supabase.",
     buttonText: "Manage content",
-    buttonLink: "admin/admin.html",
+    buttonLink: "#welcome",
     imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80"
   },
   blocks: [
@@ -27,8 +27,8 @@ const defaultContent = {
       id: "updates",
       title: "Fast updates",
       text: "Save text and images in one place so the homepage stays easy to maintain.",
-      buttonText: "Open admin",
-      buttonLink: "admin/admin.html",
+      buttonText: "Explore sections",
+      buttonLink: "#sections",
       imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
     },
     {

@@ -5,7 +5,6 @@ const signOutBtn = document.querySelector("#signOutBtn");
 
 let client = null;
 
-
 function hasSupabaseConfig() {
   return Boolean(
     config.supabaseUrl &&

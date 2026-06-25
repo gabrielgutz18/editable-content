@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="admin-header">
+    <div>
+      <p class="kicker">Supabase editor</p>
+      <h1>Homepage Admin</h1>
+    </div>
+    <a class="ghost-link" href="../index.html">View site</a>
+  </header>
+
+  <main class="admin-shell">
+    <aside class="side-panel">
+      <h2>Status</h2>
+      <p id="statusText">Checking setup...</p>
+
+      <div class="button-row">
+        <button type="button" id="signOutBtn" class="icon-button subtle-button" title="Sign out">
+          <i data-lucide="log-out"></i>
+          <span>Sign out</span>
+        </button>
+      </div>
+    </aside>
+
+    <form id="contentForm" class="editor">
+      <section class="editor-section">
+        <div class="section-heading">
+          <p class="kicker">Hero banner</p>
+          <h2>Main homepage banner</h2>
+        </div>
+
+        <div class="field-grid">
+          <label>
+            Small label
+            <input type="text" id="heroEyebrow">
+          </label>
+          <label>
+            Button text
+            <input type="text" id="heroButtonText">
+          </label>
+          <label class="wide-field">
+            Hero title
+            <textarea id="heroTitle" rows="2"></textarea>
+          </label>
+          <label class="wide-field">
+            Hero subtitle
+            <textarea id="heroSubtitle" rows="3"></textarea>
+          </label>
+          <label>
+            Button link
+            <input type="text" id="heroButtonLink">
+          </label>
+          <label>
+            Image URL
+            <input type="url" id="heroImageUrl">
+          </label>
+          <label class="wide-field file-field">
+            Upload hero image
+            <input type="file" id="heroImageFile" accept="image/*">
+          </label>
+        </div>
+      </section>
+
+      <section class="editor-section">
+        <div class="section-heading">
+          <p class="kicker">Welcome section</p>
+          <h2>Image and text block</h2>
+        </div>
+
+        <div class="field-grid">
+          <label class="wide-field">
+            Welcome title
+            <textarea id="welcomeTitle" rows="2"></textarea>
+          </label>
+          <label class="wide-field">
+            Welcome text
+            <textarea id="welcomeText" rows="4"></textarea>
+          </label>
+          <label>
+            Button text
+            <input type="text" id="welcomeButtonText">
+          </label>
+          <label>
+            Button link
+            <input type="text" id="welcomeButtonLink">
+          </label>
+          <label>
+            Image URL
+            <input type="url" id="welcomeImageUrl">
+          </label>
+          <label class="file-field">
+            Upload welcome image
+            <input type="file" id="welcomeImageFile" accept="image/*">
+          </label>
+        </div>
+      </section>
+
+      <section class="editor-section">
+        <div class="section-heading action-heading">
+          <div>
+            <p class="kicker">Elements</p>
+            <h2>Extra homepage blocks</h2>
+          </div>
+          <button type="button" id="addBlockBtn" class="icon-button text-button" title="Add element">
+            <i data-lucide="plus"></i>
+            <span>Add element</span>
+          </button>
+        </div>
+        <div id="blocksEditor" class="blocks-editor"></div>
+      </section>
+
+      <div class="save-bar">
+        <button type="button" id="resetBtn" class="icon-button subtle-button" title="Reset form">
+          <i data-lucide="rotate-ccw"></i>
+          <span>Reset</span>
+        </button>
+        <button type="submit" class="icon-button save-button" title="Save homepage">
+          <i data-lucide="save"></i>
+          <span>Save homepage</span>
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../supabase-config.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
